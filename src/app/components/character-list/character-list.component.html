@@ -1,0 +1,13 @@
+  <h1>Personajes de Marvel</h1>
+  <div>
+    <div *ngFor="let character of characters" class="col">
+      <div>
+        <a [routerLink]="['/character', character.id]">
+          <img [src]="character.thumbnail.path + '/standard_xlarge.' + character.thumbnail.extension" [alt]="character.name" class="card-img-top">
+          <div>
+            <h5>{{ character.name }}</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
