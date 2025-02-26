@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
   <h1>Personajes de Marvel</h1>
   <div>
     <div *ngFor="let character of characters" class="col">
@@ -6,8 +7,23 @@
           <img [src]="character.thumbnail.path + '/standard_xlarge.' + character.thumbnail.extension" [alt]="character.name" class="card-img-top">
           <div>
             <h5>{{ character.name }}</h5>
+=======
+<div class="container mt-5">
+  <h1 class="text-center mb-4 display-4">Personajes de Marvel</h1>
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    <div *ngFor="let character of characters" class="col">
+      <div class="card border border-top-0 h-100 shadow-sm">
+        <a [routerLink]="['/character', character.id]">
+          <img [src]="character.thumbnail.path + '/standard_xlarge.' + character.thumbnail.extension" [alt]="character.name" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ character.name }}</h5>
+>>>>>>> Stashed changes
           </div>
         </a>
       </div>
     </div>
   </div>
+<<<<<<< Updated upstream
+=======
+</div>
+>>>>>>> Stashed changes
